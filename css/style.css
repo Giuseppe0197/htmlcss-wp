@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenitore-generale {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* Header della pagina */
+
+header {
+    width: 100%;
+    /* regole debug */
+    /* height: 100px;
+    background-color: rgb(250, 144, 162); */
+}
+
+#logo {
+    width: 150px;
+    height: 50%;
+    padding-right: 20px;
+    border-right: 2px solid rgb(202, 202, 202);
+}
+
+.menu li {
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 20px;
+    color: rgb(202, 202, 202);
+}
+
+/* Corpo principale */
+
+/* Prima parte */
+
+.sezione1 {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 600px;
+    border-radius: 20px;
+    margin: 50px 0;
+    /* regole debug */
+    /* width: 100%; */
+    /* height: 500px;
+    background-color: rgb(253, 253, 131); */
+}
+
+.introduzione-corso {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.punti-corso {
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    font-size: 30px;
+    list-style-type: none;
+    width: 50%;
+}
+
+#secondo-punto {
+    font-size: 15px;
+}
+
+/* Seconda parte con float */
+
+.container {
+    width: 100%;
+    background-color: rgb(47, 47, 253);
+    margin: 20px auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-head {
+    background-color: cadetblue;
+    height: 100px;
+}
+
+.colsx, .coldx {
+    background-color: cadetblue;
+    height: 500px;
+    width: 15%;
+    float: left;
+    margin: 20px 0;
+}
+
+.main-text {
+    float: left;
+    background-color: cadetblue;
+    width: 66%;
+    height: 500px;
+    margin: 20px 2%;
+}
+
+/* Footer */
+
+footer {
+    height: 100px;
+    background-color: rgb(158, 0, 158);
+    margin-top: 20px;
+}
